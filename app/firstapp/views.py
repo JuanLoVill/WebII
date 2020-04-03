@@ -132,9 +132,7 @@ def movies(request):
                  response_data["movies"][cont]['imageURl'] = i.imageurl
                  response_data["movies"][cont]['description']= i.description
                  cont += 1
-                 response_data['result'] = 'Succes'
-                 response_data['enviada'] = request.headers["user-api-key"]
-                 response_data['bd'] = loginUser.api_key
+                 response_data['result'] = 'Success'
               return JsonResponse(response_data, status = 200)
            else:
                responseData['result'] = 'Error'
